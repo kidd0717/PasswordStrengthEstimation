@@ -22,12 +22,12 @@ int main(int argc, const char * argv[])
         scanf("%s",password);
         
         int score ;
-        char *text;
-        getPasswordStrength(password, &score, &text);
+        int level;
+        getPasswordStrength(password, &score, &level);
         
         
-        printf("===score:%d\n",score);
-        printf("strength:%s\n",text);
+        printf("score:%d\n",score);
+        printf("strength:%d\n",level);
         
     }
     return 0;

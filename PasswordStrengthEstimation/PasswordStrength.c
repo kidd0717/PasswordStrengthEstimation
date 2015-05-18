@@ -22,9 +22,9 @@ newSize, delSize, newSize-delSize);
 
 
 
-void getPasswordStrength(const char *password, int *score , char** strength);
-char* calculateStrenth(int score);
+void getPasswordStrength(const char *password, int *score , int *strength);
 
+int calculateStrenth(int score);
 int plusScore(const char *password);
 int minusScore(const char *password);
 
@@ -53,15 +53,15 @@ struct charCount
 
 //function
 #pragma mark - public function
-void getPasswordStrength(const char *password, int *score , char** strength)
+void getPasswordStrength(const char *password, int *score , int *strength)
 {
     *score = plusScore(password) - minusScore(password);
     *strength = calculateStrenth(*score);
     
-    printf("score:%d",*score);
+//    printf("score:%d",*score);
 }
 #pragma mark - private function
-char* calculateStrenth(int score)
+int calculateStrenth(int score)
 {
     if(score <= 30)
     {
