@@ -7,9 +7,28 @@
 //
 
 #include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+#include "passwordStrength.h"
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
+int main(int argc, const char * argv[])
+{
+    while (1)
+    {
+        
+    // get password
+        printf("password string:");
+        char password[20];
+        scanf("%s",password);
+        
+        int score ;
+        char *text;
+        getPasswordStrength(password, &score, &text);
+        
+        
+        printf("===score:%d\n",score);
+        printf("strength:%s\n",text);
+        
+    }
     return 0;
 }

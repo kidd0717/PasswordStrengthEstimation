@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E9A9AD1919DE4991000F1C34 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = E9A9AD1819DE4991000F1C34 /* main.c */; };
+		E9AA726A19E50D8B0010E7C9 /* PasswordStrength.c in Sources */ = {isa = PBXBuildFile; fileRef = E9AA726819E50D8B0010E7C9 /* PasswordStrength.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		E9A9AD1519DE4991000F1C34 /* PasswordStrengthEstimation */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PasswordStrengthEstimation; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9A9AD1819DE4991000F1C34 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		E9AA726819E50D8B0010E7C9 /* PasswordStrength.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = PasswordStrength.c; sourceTree = "<group>"; };
+		E9AA726919E50D8B0010E7C9 /* PasswordStrength.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasswordStrength.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				E9A9AD1819DE4991000F1C34 /* main.c */,
+				E9AA726819E50D8B0010E7C9 /* PasswordStrength.c */,
+				E9AA726919E50D8B0010E7C9 /* PasswordStrength.h */,
 			);
 			path = PasswordStrengthEstimation;
 			sourceTree = "<group>";
@@ -119,6 +124,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9A9AD1919DE4991000F1C34 /* main.c in Sources */,
+				E9AA726A19E50D8B0010E7C9 /* PasswordStrength.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +238,7 @@
 				E9A9AD1E19DE4991000F1C34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
